@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import auditRoutes from "./routes/audit.js";
 import portfolioRoutes from "./routes/portfolio.js";
 
-dotenv.config({ path: "../.env" });
+dotenv.config();
 
 const app = express();
 app.use(cors({ origin: "http://localhost:5173" }));

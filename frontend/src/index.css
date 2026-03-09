@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 60% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* PRIMARY - BLUE (#0D98BA) */
+    --primary: 191 87% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    /* SECONDARY - GREEN (#236F21) */
+    --secondary: 118 53% 28%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 40% 94%;
+    --muted-foreground: 215 19% 35%;
+
+    --accent: 118 30% 90%;
+    --accent-foreground: 118 53% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 30% 90%;
+    --input: 200 30% 90%;
+    --ring: 191 87% 39%;
+
+    --radius: 0.75rem;
+
+    /* utility colors */
+    --amber: 38 92% 50%;
+    --green: 118 53% 28%;
+    --red: 0 84% 60%;
+
+    /* shadows updated to match blue/green theme */
+    --shadow-blue: 0 4px 24px rgba(13, 152, 186, 0.15);
+    --shadow-blue-hover: 0 4px 24px rgba(13, 152, 186, 0.25);
+
+    --shadow-green: 0 4px 24px rgba(35, 111, 33, 0.15);
+    --shadow-green-hover: 0 4px 24px rgba(35, 111, 33, 0.25);
+
+    /* sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 40% 15%;
+    --sidebar-primary: 191 87% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 40% 94%;
+    --sidebar-accent-foreground: 222 40% 15%;
+    --sidebar-border: 200 30% 90%;
+    --sidebar-ring: 191 87% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
